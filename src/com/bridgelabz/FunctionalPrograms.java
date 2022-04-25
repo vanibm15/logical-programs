@@ -4,21 +4,26 @@ public class FunctionalPrograms {
 
     public static void main(String args[])
             {
-                char[] chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789".toCharArray();
-                int max=100000000;
-                int random=(int) (Math.random()*max);
-                StringBuffer sb=new StringBuffer();
 
-                while (random>0)
-                {
-                    sb.append(chars[random % chars.length]);
-                    random /= chars.length;
-                }
-
-                String couponCode=sb.toString();
-                System.out.println("Coupon Code: "+couponCode);
+                int i,m=0,flag=0;
+                int n=3;//it is the number to be checked
+                m=n/2;
+                if(n==0||n==1){
+                    System.out.println(n+" is not prime number");
+                }else{
+                    for(i=2;i<=m;i++){
+                        if(n%i==0){
+                            System.out.println(n+" is not prime number");
+                            flag=1;
+                            break;
+                        }
+                    }
+                    if(flag==0)  { System.out.println(n+" is prime number"); }
+                }//end of else
             }
-        }
+            }
+
+
 
 
 
