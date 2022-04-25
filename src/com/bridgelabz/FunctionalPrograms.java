@@ -1,5 +1,7 @@
 package com.bridgelabz;
+
 import java.util.Scanner;
+
 public class FunctionalPrograms {
     public static void main(String[] args) {
         long n, sum = 0;
