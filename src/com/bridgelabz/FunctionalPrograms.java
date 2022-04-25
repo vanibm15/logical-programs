@@ -3,19 +3,16 @@ package com.bridgelabz;
 public class FunctionalPrograms {
 
     public static void main(String args[])
-    {
-        int n1 = 0, n2 = 1, n3, i, count = 10;
-        System.out.print(n1 + " " + n2);//printing 0 and 1
-
-        for (i = 2; i < count; ++i)//loop starts from 2 because 0 and 1 are already printed
         {
-            n3 = n1 + n2;
-            System.out.print(" " + n3);
-            n1 = n2;
-            n2 = n3;
+            int number = 987654, reverse = 0;
+            while (number != 0) {
+                int remainder = number % 10;
+                reverse = reverse * 10 + remainder;
+                number = number / 10;
+            }
+            System.out.println("The reverse of the given number is: " + reverse);
         }
 
     }
-}
 
 
